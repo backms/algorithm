@@ -4,7 +4,7 @@ public class step13 {
 
     public static void main(String[] args) {
 
-        // baekJoon 알고리즘 문제 (https://www.acmicpc.net/problem/2588)
+        // 1단계 13번 문제
 
         int firstNum = 472;
         int secondNum = 385;
