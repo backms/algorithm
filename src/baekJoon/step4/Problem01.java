@@ -15,8 +15,8 @@ public class Problem01 {
         while(true){
             if(number >= 1 && number <= 1000000){
                 int[] arr = new int[number];
-                for(int i=0; i<number; i++){
-                    arr[i] = r.nextInt(10)*1;
+                for(int i=0; i<arr.length; i++){
+                    arr[i] = r.nextInt(1000000);
                     if(arr[i]<1000000 && arr[i]>1000000){
                         i--;
                     }
@@ -26,9 +26,23 @@ public class Problem01 {
                         }
                     }
                 }
-                for(int i=0; i<number; i++){
-                    System.out.printf(arr[i] + " \n");
+                for(int i=0; i<arr.length; i++){
+                    System.out.printf(arr[i] + " ");
                 }
+                System.out.println("\n");
+
+                int maxNum = arr[1], minNum = arr[1];
+
+                for(int i=0; i<arr.length; i++){
+                    if(arr[i] > maxNum){
+                        maxNum = arr[i];
+                    }
+                    if(arr[i] < minNum){
+                        minNum = arr[i];
+                    }
+                }
+
+                System.out.println("maxNum : " + maxNum + ", minNum : " + minNum);
 
                 break;
             }
