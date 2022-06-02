@@ -26,14 +26,10 @@ public class Problem01 {
                         }
                     }
                 }
-                for(int i=0; i<arr.length; i++){
-                    System.out.printf(arr[i] + " ");
-                }
-                System.out.println("\n");
-
                 int maxNum = arr[1], minNum = arr[1];
 
                 for(int i=0; i<arr.length; i++){
+                    System.out.printf(arr[i] + " ");
                     if(arr[i] > maxNum){
                         maxNum = arr[i];
                     }
@@ -41,6 +37,7 @@ public class Problem01 {
                         minNum = arr[i];
                     }
                 }
+                System.out.println("\n");
 
                 System.out.println("maxNum : " + maxNum + ", minNum : " + minNum);
 
